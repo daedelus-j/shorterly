@@ -12,7 +12,7 @@ const required_fields = [
 ];
 
 const fieldValidations = {
-  first_name: [messages.url],
+  url: [messages.url],
 }
 
 export const formValidator = validator({

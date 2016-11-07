@@ -7,7 +7,6 @@ import {
 import * as reducers from '../reducers/shorterly';
 import thunk from 'redux-thunk';
 import { syncHistory, routerReducer, routerMiddleware } from 'react-router-redux';
-import { createHistory } from 'history';
 
 
 export function factory(history, initialState={}) {

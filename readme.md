@@ -1,14 +1,6 @@
-# django-starter-template #
+# Shorterly #
 
-An easy to use project template for Django 1.10 that follows best practices.
-
-## Features ##
-
-- Compatible with python 2.7 and 3.4
-- [Django compressor](http://django-compressor.readthedocs.org/en/latest/) to compress JS and CSS and compile LESS/SASS files.
-- [Django debug toolbar](http://django-debug-toolbar.readthedocs.org/) enabled for superusers.
-- [Argon2](https://docs.djangoproject.com/en/1.10/topics/auth/passwords/#using-argon2-with-django) to hash the passwords
-- A [fabfile](http://www.fabfile.org/) to ease the deployment.
+A barebones url shortener in Django 1.10 with a react-redux client.
 
 ## Quickstart ##
 
@@ -36,7 +28,6 @@ Accessing `http://localhost:8000/` will display a form. You can create a
 url there and be navigated to a details view.
 
 To see the list of urls with their stats, navigate to `http://localhost:8000/urls/`.
-
 
 ### Settings ###
 
