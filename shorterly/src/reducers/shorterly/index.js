@@ -4,7 +4,7 @@ import {
   form_global_errors,
   form_validations,
   shortener_form,
-} from './form';
+} from './create';
 
 import {
   shortener_details_form,

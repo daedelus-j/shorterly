@@ -2,7 +2,7 @@ import ext from 'jquery-extend';
 import { devices, actions } from '../../constants';
 import {
   completelyFilledOut, formValidator, isFormValid
-} from './form/validations';
+} from './create/validations';
 
 const {
   UPDATE_FORM,

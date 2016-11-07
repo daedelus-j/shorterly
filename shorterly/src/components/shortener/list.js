@@ -1,23 +1,7 @@
 'use strict';
 
 import React from 'react';
-import cx from 'classnames';
-import copy from 'copy-to-clipboard';
 import { connect } from 'react-redux';
-import {
-  updateDeviceUrl, updateForm,
-  validateDetailsField,
-  updateActiveDevice,
-  showDetailsEditForm,
-  closeDetailsEditForm,
-  copiedUrl,
-  validateField,
-} from '../../actions/shorterly'
-import { url_types } from '../../constants'
-import pvd from '../../general-libs/preventer';
-import { isFormValid } from '../../reducers/shorterly/form/validations';
-import FormBody from './form/body'
-
 
 const Url  = ({ id, devices, short_url, total_visits }) => {
   return (
