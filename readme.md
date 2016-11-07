@@ -46,10 +46,14 @@ Just navigate to `/urls/` and you can view all the urls.
 
 Pretty straightforward data models and leverages django rest for the api.
 
+#### API
+
 For now the api endpoints are prefixed with `/api/` as follows:
 
     /api/device-urls/:id PUT for updating redirect urls by device id
     /api/urls/           POST for creating Urls and related DeviceUrls
+    
+The models are serialized with django rest serializers that [decorate the models](https://github.com/daedelus-j/shorterly/blob/master/apps/base/serializers.py) for client usage.
 
 You can retrieve the main shortened url which for now just has a `localhost:8000` as a domain but would obviously be configurable for different environments. This can be retrieved in the details view as shown above.
 
