@@ -39,3 +39,29 @@ Just navigate to `/urls/` and you can view all the urls.
 ### Settings ###
 
 #### For now, settings only work for development, which is the default environment.
+
+## Notes on Implementation
+
+### Server Side
+
+Pretty straightforward data models and leverages django rest for the api.
+
+For now the api endpoints are prefixed with `/api/` as follows:
+
+    /api/device-urls/:id PUT for updating redirect urls by device id
+    /api/urls/           POST for creating Urls and related DeviceUrls
+
+You can retrieve the main shortened url which for now just has a `localhost:8000` as a domain but would obviously be configurable for different environments. This can be retrieved in the details view as shown above.
+
+### Client Side
+
+Right now there is no server side rendering and all javascript/less lives in `./shorterly/src/`. It is currently built with webpack and the javascript uses React/Redux libraries and architecture. The directory structure is similar to react conventions with:
+
+    /componenents       # all react components
+    /containers         # main render container
+    /stores             # where redux stores live
+    /reducers           # application reducers
+    /actions            # redux actions
+    /general-libs       # general purpose js libraries
+    /less               # where less components are stored
+    /less/ui-kit        # base styles
