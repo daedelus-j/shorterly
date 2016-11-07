@@ -15,8 +15,8 @@ import {
 } from '../../actions/shorterly'
 import { url_types } from '../../constants'
 import pvd from '../../general-libs/preventer';
-import { isFormValid } from '../../reducers/shorterly/form/validations';
-import FormBody from './form/body'
+import { isFormValid } from '../../reducers/shorterly/create/validations';
+import FormBody from './create/body'
 
 
 const UrlType  = ({ type, onSelect, selected, icon_classname }) => {

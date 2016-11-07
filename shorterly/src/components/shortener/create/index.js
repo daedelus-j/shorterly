@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { createUrl, updateForm, validateField } from '../../../actions/shorterly'
 import { url_types } from '../../../constants'
 import pvd from '../../../general-libs/preventer';
-import { isFormValid } from '../../../reducers/shorterly/form/validations'
+import { isFormValid } from '../../../reducers/shorterly/create/validations'
 import FormBody from './body'
 
 
@@ -60,8 +60,6 @@ const ShortenerForm = React.createClass({
       shortener_form,
       form_validations,
     } = this.props;
-
-    console.log(form_validations)
 
     return (
       <div className='container__inner'>

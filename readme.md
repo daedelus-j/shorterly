@@ -9,8 +9,6 @@ First create and activate your virtualenv, you can use [virtualenvwrapper](https
 
     pip install django==1.10
 
-Then download and tar unzip file and cd into the project:
-
 Then, assuming you have node installed (>=v6.0.0):
 
 1. `pip install -r requirements.txt`
