@@ -1,0 +1,96 @@
+.btn-cont--details {
+  padding: 30px;
+  /* width: 80%; */
+  /* margin: 0 auto; */
+}
+
+.url-type--details {
+  cursor: pointer;
+  padding: 30px 0;
+  box-shadow: none;
+  .fa {
+    font-size: 40px;
+  }
+}
+
+@active--color: @primary-10;
+
+.url-type--active {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+    0 1px 2px rgba(0,0,0,0.24);
+  color: @active--color;
+  .fa {
+    color: @active--color;
+  }
+  transition: box-shadow .2s ease-in-out;
+}
+
+.header--4--active {
+  color: @active--color;
+}
+
+@edit-placeholder--border: @primary-5;
+@edit-placeholder--hover-border: @primary-7;
+
+.edit-placeholder {
+  border-bottom: 1px solid @edit-placeholder--border;
+  padding: 10px 15px;
+}
+
+@url-copied--bg: @accent;
+@url-copied--color: @primary-2;
+
+.url-copied {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  opacity: 0;
+  background: @url-copied--bg;
+  color: @url-copied--color;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+}
+
+.fadeOut {
+  -webkit-animation: fadeOut 2s ease-in-out;
+  -moz-animation: fadeOut 2s ease-in-out;
+  -o-animation: fadeOut 2s ease-in-out;
+  animation: fadeOut 2s ease-in-out;
+}
+
+.url-copied--active {
+  .fadeOut();
+}
+
+@-webkit-keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@-moz-keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@-o-keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.edit-cont {
+  position: relative;
+}
+
+.clipboard {
+  position: relative;
+}
+
+.clipboard__url {
+  margin-right: 8px;
+}

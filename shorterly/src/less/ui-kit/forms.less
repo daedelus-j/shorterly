@@ -1,0 +1,91 @@
+.form__field {
+  position: relative;
+  vertical-align: middle;
+}
+
+@input--border-color: @primary-4;
+@input--color: @primary-7;
+@input--color--focus: @primary-7;
+@input__placeholder--color: @primary-5;
+@input__error--color: @accent;
+@label--color: @primary-5;
+@input--color--invalid: @accent;
+
+
+.form__field__input {
+
+  width: 100%;
+  padding: 0px 12px 6px;
+  line-height: 31px;
+  color: @input--color;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid @input--border-color;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+
+  &:focus {
+    border-bottom: 1px solid @input--border-color;
+    color: @input--color--focus;
+  }
+
+  &::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 20px;
+    color: @input__placeholder--color;
+    transition: color .2s ease-in-out;
+  }
+
+  &:focus {
+    &::-webkit-input-placeholder {
+      color: transparent;
+    }
+  }
+}
+
+.form__field__input--not-empty {
+  border-bottom: 1px solid @input--border-color;
+  color: @input--color--focus;
+}
+
+.form__field__input--invalid {
+  border-bottom: 1px solid @input--color--invalid;
+  color: @input--color--invalid;
+
+  &::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 20px;
+    color: @input--color--invalid;
+    transition: color .2s ease-in-out;
+  }
+}
+
+.form__field__label {
+  opacity: 0;
+  color: @label--color;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: opacity .2s ease-in-out;
+}
+
+.form__field__label--invalid {
+  color: @input--color--invalid;
+}
+
+
+.form__field__label--shown {
+  opacity: 1;
+}
+
+.form__field__error {
+  color: @input__error--color;
+}
+
+.field-errors {
+  position: absolute;
+}

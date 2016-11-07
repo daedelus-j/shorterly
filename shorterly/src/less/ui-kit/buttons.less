@@ -1,0 +1,126 @@
+@primary-btn--background: @accent;
+@primary-btn--color: @primary-1;
+@disabled-btn--background: @primary-10;
+@disabled-btn--color: @primary-9;
+@default-btn-color: @primary-1;
+@secondary-btn--background: @primary-5;
+@secondary-btn--color: white;
+
+.btn-reset {
+  &:link {
+    outline: none;
+    text-decoration: none;
+    color: @default-btn-color;
+  }
+
+  &:visited {
+    color: @default-btn-color;
+    text-decoration: none;
+    outline: none;
+  }
+
+  &:hover {
+    color: @default-btn-color;
+    outline: none;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: @default-btn-color;
+    outline: none;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  img {
+    color: @default-btn-color;
+    outline: none;
+    border: none;
+  }
+
+}
+
+.btn {
+  background: none;
+  border: none;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 11px 41px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+  .btn-reset();
+  background: @secondary-btn--background;
+  color: @secondary-btn--color;
+
+  .fa {
+    color: white;
+  }
+}
+
+
+.btn--primary {
+  .btn();
+
+  border: none;
+  background: @primary-btn--background;
+  color: @primary-btn--color;
+  text-decoration: none;
+  transition: background .2s ease-in-out;
+
+  &:link, &:visited, &:hover,
+  &:focus, &:active {
+    text-decoration: none;
+    color: @primary-btn--color;
+  }
+
+  &:hover {
+    background: @primary-btn--background;
+  }
+}
+
+.btn--disabled {
+  background: @disabled-btn--background;
+  color: @disabled-btn--color;
+
+  &:link, &:visited, &:hover,
+  &:focus, &:active {
+    text-decoration: none;
+    background: @disabled-btn--background;
+    color: @disabled-btn--color;
+  }
+}
+
+.btn--sm {
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.btn-cont__attached {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+
+  .btn--primary {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    border-radius: 0 2px 2px 0;
+  }
+}
+
+.btn-cont__attached-to {
+  width: 80%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.btn--icon {
+  padding: 12px;
+}
