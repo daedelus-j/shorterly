@@ -52,6 +52,7 @@ export function form_validations(state={}, action) {
     case VALIDATE_FIELD:
       key = action.data.key;
       validations = formValidator.validate(action.data);
+      console.log(action.data)
       if (validations.length > 0) return ext(true, {}, state, { [key]: validations });
       return ext(true, {}, state);
     default:

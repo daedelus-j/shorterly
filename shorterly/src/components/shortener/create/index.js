@@ -57,8 +57,12 @@ const ShortenerForm = React.createClass({
 
   render()  {
     const {
-      shortener_form
+      shortener_form,
+      form_validations,
     } = this.props;
+
+    console.log(form_validations)
+
     return (
       <div className='container__inner'>
         <div className='spacer center'>
