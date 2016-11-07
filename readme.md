@@ -38,5 +38,4 @@ Just navigate to `/urls/` and you can view all the urls.
 
 ### Settings ###
 
-# For now, settings only work for development, which is the default
-environment.
+#### For now, settings only work for development, which is the default environment.
